@@ -1,5 +1,7 @@
 # Blue Line — Zone Entry Explorer
 
+[Live app](https://blue-line-explorer.onrender.com) · [GitHub repository](https://github.com/samwolff93/blue-line-explorer)
+
 A coaching interface for one question: **which offensive-zone entries turn into shot attempts?** Built for the Calgary Flames developer interview exercise. Python owns ingestion, validation, storage, attribution, filtering, and statistics. A small HTML/CSS/JavaScript frontend presents comparisons, shot locations, and inspectable sequences.
 
 ## Run locally
@@ -69,9 +71,9 @@ docker build -t blue-line .
 docker run --rm -p 8000:8000 blue-line
 ```
 
-A Render Blueprint is included in `render.yaml`. Push this repository to GitHub, create a Render Blueprint from it, and verify `/health` and the dashboard after deployment. The Docker build generates SQLite from the bundled CSV; no external database or secrets are needed. Free hosting may sleep between visits. Docker/Render deployment is configured but has not been executed in this workspace.
+A Render Blueprint is included in `render.yaml`. Push this repository to GitHub, create a Render Blueprint from it, and verify `/health` and the dashboard after deployment. The Docker build generates SQLite from the bundled CSV; no external database or secrets are needed. Free hosting may sleep between visits. Deployed on Render’s free Docker web service. The service health check is `/health`. Public-repository deployments were configured through the Render dashboard; check that dashboard for redeploy options when updating code.
 
-Before submitting: confirm the public GitHub repository and live deployment URLs work in a signed-out browser; verify filters and a sequence; add both URLs to the submission. This workspace currently has no Git remote or hosting account configured.
+Before submitting: confirm the public GitHub repository and live deployment URLs work in a signed-out browser; verify filters and a sequence; add both URLs to the submission. The repository and deployment links are at the top of this README.
 
 ## Attribution and terms
 
