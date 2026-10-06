@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: blue-line-explorer
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
