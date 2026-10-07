@@ -1,4 +1,4 @@
-const $=id=>document.getElementById(id), colors={Carried:'#2b887d',Dumped:'#cd8842',Played:'#8973b9'}, labels={Carried:'Carry',Dumped:'Dump',Played:'Pass'};
+const $=id=>document.getElementById(id), colors={Carried:'#d2001c',Dumped:'#faaf19',Played:'#343434'}, labels={Carried:'Carry',Dumped:'Dump',Played:'Pass'};
 const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let data, page=0, selected=null, shotType='', revision=0, sequenceRevision=0;
 const filters=['team','player','game','strength','window'];
