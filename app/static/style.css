@@ -3,3 +3,5 @@
 
 /* Red and gold accents inspired by Calgary’s team palette. */
 header{border-top:5px solid #d2001c;border-bottom:3px solid #faaf19}.brand{color:#d2001c}.brand span{color:var(--ink)}.status-dot{background:#faaf19}.rink-tabs .active{background:#d2001c;border-color:#d2001c}.metrics strong{color:#242424}.tag{border-left:3px solid #faaf19}.panel-top>.eyebrow{color:#b60018}a:hover{color:#b60018}
+
+.entry-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.table-tools{display:flex;align-items:center;gap:15px;justify-content:space-between;margin:10px 0}.table-tools button{flex-shrink:0}.sort-button{border:0;padding:5px 4px;background:transparent;font-size:11px}.sort-button span{color:var(--blue)}#table-error{color:#b60018;font-size:12px}#table-error:empty{display:none}@media(max-width:650px){.entry-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.table-tools{align-items:flex-start;flex-direction:column}}
